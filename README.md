@@ -2,7 +2,7 @@
 
 This project is a simple REST application to manager two list of numbers (left, right).
 
-The application has three endpoints:
+The application has five endpoints:
 	
     POST at /v1/diff/{id}/left  - which should save a new number for post with passed {id} in left list
     POST at /v1/diff/{id}/right - which should save a new number for post with passed {id} in right list
@@ -30,7 +30,9 @@ To compile and created a jar file:
 <br />
 use the command:
 <br />
+
 mvn clean install
+
 to run it: 
 <br />
 java -jar target/diff-number-service.jar 
@@ -57,7 +59,9 @@ To remove:
 $ docker rm [CONTAINER_ID]
 
 
-To Containerize it using docker-compose:
+After created, you can use also docker-compose:
 
 To run: 
-$ docker-compose-up
+$ docker-compose up
+
+Obs: Maybe you must use sudo permission to run it using docker. 
